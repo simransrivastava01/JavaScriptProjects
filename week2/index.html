@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>I am Mr.JavaScript</title>
+
+</head>
+
+<body>
+<center>
+
+<h1>I am Mr.JavaScript</h1>
+<a href="#" id="change">Hey! How's you doing? wassup??</a><br>
+
+<a href="#" id="reset">Reset</a><br>
+
+<a href="#" id="sum">Sum</a>
+
+<script>
+
+//var h1 = document.querySelector("h1");
+
+//h1.innerHTML = "I am fine";
+
+//console.log(h1);
+
+//use document.getElementById() instead of #
+//use document.getElementByClassName() instead of .
+//a[0] adding addEventListener and more..................
+
+var a = document.querySelector("#change");
+
+a.addEventListener("click",function(){
+
+alert("Yeah! you are inside addEventListener.");
+
+var h1=document.querySelector("h1");
+h1.innerHTML="I am doing great! k.thnxx.bye.";
+
+console.log(h1);
+
+});
+
+var a = document.querySelector("#reset");
+a.addEventListener("click",function(){
+var h1 = document.querySelector("h1");
+h1.innerHTML = "I am Mr.JavaScript";
+});
+
+var a1=10;
+var b1=20;
+
+var a = document.getElementById("sum");
+a.addEventListener("click",function(){
+var h1=document.querySelector("h1");
+h1.innerHTML=a1+b1;
+
+});
+
+
+
+</script>
+
+</center>
+
+</body>
+
+</html>
